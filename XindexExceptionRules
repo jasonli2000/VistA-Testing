@@ -1,0 +1,12 @@
+1. Grantedd Foundations package the same privledge as the Kernel
+2. For Bar Code Medication Administrations. Granted Routine PSBRPC2
+3. FOr Engineering package, all UCI and invalid first line
+
+
+// command to generate the exception list based on log
+
+python Scripts/XINDEXExceptGen.py -l ~/build/VistA-FOIA/Testing/XINDEXLogs/ -o XindexException/GTM/ -p Foundations
+python Scripts/XINDEXExceptGen.py -l ~/build/VistA-FOIA/Testing/XINDEXLogs/ -o XindexException/GTM/ -p Barcode_Medication_Administration -r PSBRPC2
+python Scripts/XINDEXExceptGen.py -l ~/build/VistA-FOIA/Testing/XINDEXLogs/ -o XindexException/GTM/ -p Engineering
+python Scripts/XINDEXExceptGen.py -l ~/build/VistA-FOIA/Testing/XINDEXLogs/ -o XindexException/GTM/ -p Health_Level_Seven -r HLOSTRAC HLOPING HLOTRACE
+python Scripts/XINDEXExceptGen.py -l ~/build/VistA-FOIA/Testing/XINDEXLogs/ -o XindexException/GTM/ -p Scheduling
